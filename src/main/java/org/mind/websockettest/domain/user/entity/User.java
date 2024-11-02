@@ -7,8 +7,8 @@ import org.hibernate.annotations.ColumnDefault;
 @Entity
 @Getter
 @Builder
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
 @AllArgsConstructor
-@NoArgsConstructor
 @ToString
 public class User {
     @Id
