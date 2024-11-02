@@ -5,17 +5,15 @@ import lombok.*;
 import org.hibernate.annotations.ColumnDefault;
 import org.hibernate.annotations.CreationTimestamp;
 import org.mind.websockettest.domain.user.entity.User;
+import org.springframework.data.mongodb.core.mapping.Document;
 
-import java.lang.reflect.Member;
-import java.sql.Timestamp;
 import java.time.LocalDateTime;
 
-@Entity
+@Document(collation = "chat")
 @Getter
-@Setter
 @Builder
+@NoArgsConstructor(access = AccessLevel.PROTECTED)
 @AllArgsConstructor
-@NoArgsConstructor
 @ToString
 public class Chat {
 
