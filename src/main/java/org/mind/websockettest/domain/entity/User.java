@@ -24,10 +24,10 @@ public class User {
     @Column(nullable = false)
     private String password;
 
-    @ColumnDefault("USER")
+    @ColumnDefault("'USER'")
     private String role;
 
-    @ColumnDefault("NORMAL")
+    @ColumnDefault("'NORMAL'")
     private String social;
 
     @ColumnDefault("true")
