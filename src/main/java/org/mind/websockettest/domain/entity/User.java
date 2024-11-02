@@ -1,4 +1,4 @@
-package org.mind.websockettest.domain.user.entity;
+package org.mind.websockettest.domain.entity;
 
 import jakarta.persistence.*;
 import lombok.*;

@@ -1,15 +1,14 @@
-package org.mind.websockettest.domain.chat.entity;
+package org.mind.websockettest.domain.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.annotations.ColumnDefault;
 import org.hibernate.annotations.CreationTimestamp;
-import org.mind.websockettest.domain.user.entity.User;
 import org.springframework.data.mongodb.core.mapping.Document;
 
 import java.time.LocalDateTime;
 
-@Document(collation = "chat")
+@Document(collection = "chat")
 @Getter
 @Builder
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
